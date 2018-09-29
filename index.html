@@ -34,7 +34,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m4">
-					<div class="card hoverable pink darken-4">
+					<div class="card hoverable pink darken-4" onclick="alert('LOL')">
 						<img class="responsive-img " src="src/curr2.jpg">
 						<div class="card-content white-text">
 							<span class="card-title">Curriculum</span>
@@ -48,7 +48,7 @@
 					</div>
 				</div>
 				<div class="col s12 m4">
-					<div class="card hoverable white">
+					<div class="card orange">
 						<img class="responsive-img" src="src/avatar.jpg">
 						<div class="card-content black-text">
 							<span class="card-title">Alfredo Martín de la Sierra Pinke</span>
@@ -73,7 +73,36 @@
 			</div>	
 		</div>
 	</section>
+	<footer class="page-footer orange darken-3">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				<a class="grey-text text-lighten-4 right"></a>
+			</div>
+		</div>
+	</footer>
+	<div class="fixed-action-btn" id="scrollButton">
+		<a class="btn-floating btn large red" onclick="topFunction()">
+			<i class="large material-icons">arrow_upward</i>
+		</a>
+	</div>
 	<script src="js/jquery.js"></script>
 	<script src="js/materialize.min.js"></script>
+	<script src="js/scrollButton.js">
+	</script>
 </body>
 </html>
