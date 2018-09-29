@@ -24,9 +24,12 @@
 	word-wrap: normal;
 	white-space: nowrap;
 	direction: ltr;
-
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	-moz-osx-font-smoothing: grayscale;
 	font-feature-settings: "liga";
+}
+
+#scrollButton {
+	display: none; /* Hidden by default */
 }
