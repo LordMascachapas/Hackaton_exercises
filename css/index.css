@@ -33,3 +33,7 @@
 #scrollButton {
 	display: none; /* Hidden by default */
 }
+
+#linkText {
+	color: white;
+}
