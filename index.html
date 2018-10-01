@@ -6,26 +6,27 @@
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body background="src/beer2.jpg">
 	<header>
 		<nav>
 			<div class="orange nav-wrapper">
 				<div class="row">
-					<div class="imput-field col s4 hide-on-small-only">
-						<div class="input-field">
-							<input id="first_name" type="text" class="validate">
-							<label for="first_name">Buscar</label>
-						</div>
-					</div>
-					<div class="col s1 hide-on-small-only">
-						<i class="material-icons">search</i>
+					<div class="navSearch col s7 m7 l7">
+						<nav class="orange darken-2">
+							<div class="nav-wrapper">
+								<form>
+									<div class="input-field">
+										<input id="searchwords" type="search" required placeholder="Search...">
+										<label class="label-icon" for="search" id="word"></label>
+									</div>
+								</form>
+							</div>
+						</nav>
 					</div>
 					<ul class="right">
 						<li><a href="index.html"><i class="material-icons right">home</i>Inicio</a></li>
-						<li><a href="http://archives.materializecss.com/0.100.2/about.html"><i class="material-icons right">info</i>Acerca</a></li>
-						<li><a href=""><i class="material-icons right">email</i>Contacto</a></li>
-					</ul>
 				</div>
 			</div>
 		</nav>
@@ -87,14 +88,12 @@
 	<footer class="page-footer orange darken-3">
 		<div class="container">
 			<div class="row">
-				<div class="col l6 s12">
-				</div>
-				<div class="col l4 m6 s12 offset-l2 s12">
+				<div class="col l4 m6 s12">
 					<h5 class="white-text">Links</h5>
 					<ul>
-						<li><a id="linkText" href="https://t.me/tuuser" onmouseover="highlight(this)" onmouseout="conceal(this)">Telegram</a></li>
-						<li><a id="linkText" href="https://github.com/LordMascachapas" onmouseover="highlight(this)" onmouseout="conceal(this)">GitHub</a></li>
-						<li><a id="linkText" href="https://twitter.com/alfredm3007" onmouseover="highlight(this)" onmouseout="conceal(this)">Twitter</a></li>
+						<li><a id="linkText" href="https://t.me/tuuser" onmouseover="highlight(this)" onmouseout="conceal(this)"><i class="fab fa-telegram-plane"></i> Telegram</a></li>
+						<li><a id="linkText" href="https://github.com/LordMascachapas" onmouseover="highlight(this)" onmouseout="conceal(this)"><i class="fab fa-github"></i> Github</a></li>
+						<li><a id="linkText" href="https://twitter.com/alfredm3007" onmouseover="highlight(this)" onmouseout="conceal(this)"><i class="fab fa-twitter"></i> Twitter</a></li>
 					</ul>
 				</div>
 			</div>
@@ -115,5 +114,6 @@
 	<script src="js/scrollButton.js">
 	</script>
 	<script src="js/linkText.js"></script>
+	<script src="js/hilitor.js"></script>
 </body>
 </html>
